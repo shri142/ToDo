@@ -1,13 +1,10 @@
 from django.shortcuts import render , HttpResponse , redirect
-from .forms import NewUserForm
-from django.contrib.auth import login
-from django.contrib import messages
+
 
 # Create your views here.
 
 def index(request):
-
-    return HttpResponse("Hello World")
+    return HttpResponse("Hello world")
 
 def kuchtoh(request):
 
@@ -16,6 +13,11 @@ def kuchtoh(request):
 def homepage(request):
 
     return HttpResponse("We are on home page")
+
+
+
+
+
 
 
 
