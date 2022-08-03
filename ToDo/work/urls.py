@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.urls import path
-from .import views
+from . import views
 
 
 urlpatterns = [
-    path('kt/', views.kuchtoh,name='kt'),
+    path('login/', views.login,name='kt'),
     path('', views.index,name='index'),
-    path("homepage/", views.homepage, name="homepage"),
+    path("logout/", views.logout, name="homepage"),
 
 
 ]

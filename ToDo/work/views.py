@@ -4,16 +4,13 @@ from django.shortcuts import render , HttpResponse , redirect
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello world")
+    render(request, 'index.html')
 
-def kuchtoh(request):
+def login(request):
+    render(request, 'login.html')
 
-    return HttpResponse("We are on kuch toh page")
-
-def homepage(request):
-
-    return HttpResponse("We are on home page")
-
+def logout(request):
+    render(request, 'logout.html')
 
 
 
