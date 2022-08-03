@@ -5,5 +5,7 @@ from .import views
 urlpatterns = [
     path('kt/', views.kuchtoh,name='kt'),
     path('', views.index,name='index'),
+    path("homepage/", views.homepage, name="homepage"),
+    path("register/", views.register_request, name="register"),
 
 ]
